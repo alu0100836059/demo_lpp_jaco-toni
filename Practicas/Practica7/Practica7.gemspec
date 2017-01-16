@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["alu0100789331"]
   spec.email         = ["alu0100789331@edu.ull.es"]
 
-  spec.summary       = %q{"Practica7 LPP(ULL)"}
-  spec.description   = %q{"Lista simplemente enlazada"}
+  spec.summary       = "Practica7 LPP(ULL)"
+  spec.description   = "Lista simplemente enlazada"
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
