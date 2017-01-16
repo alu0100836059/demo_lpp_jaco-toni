@@ -21,5 +21,5 @@ end
 #puts numero
 
 class Menu
-    
+    attr_accessor
 end
