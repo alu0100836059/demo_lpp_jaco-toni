@@ -43,7 +43,7 @@ git pull
 ~~~
 * A continuación y __antes__ de modificar nada, cámbiese a su rama de desarrollo:
 ~~~
-git branch nombre_rama
+git checkout nombre_rama
 ~~~
 * A continuación traeremos los cambios de master
 ~~~
@@ -52,7 +52,7 @@ git merge master
 * Realice todos los cambios que desee y añada y confirme dichos cambios en su rama
 * Una vez acabada la sesión de trabajo sitúese de nuevo en la rama principal del proyecto, en este caso ___master___ y fusione ambas ramas para incorporar su trabajo:
 ~~~
-git branch master
+git checkout master
 git merge nombre_su_rama
 ~~~
 * Por último empuje todos los cambios realizados para mantener el remoto actualizado:
