@@ -84,9 +84,9 @@ end
 
 #### ej4.rb Función que se pide en el ejercicio
 def max_VCM conjunto
-  maximo = conjunto.max
+  maximo = conjunto.max.VCM
   maximo
 end
 
 # Mostramos por pantalla:
-puts "\nEl menú con un máximo de calorías es :\n#{max_VCM recomendacion}"
+puts "\nEl máximo de calorías es :\n#{max_VCM recomendacion}"
