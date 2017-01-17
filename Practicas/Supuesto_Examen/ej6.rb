@@ -1,17 +1,12 @@
-# Ejercicio número cuatro de: Complementario&Books/ExamenEneroLPP.pdf
+# Ejercicio número seis de: Complementario&Books/ExamenEneroLPP.pdf
 
 =begin
-   - Crear una función que calcule el valor máximo de una recomendación
+- función que multiplique un factor por una recomendación. Se trata de cumplir
+  la expectativa del ejercicio 5: max(b)*b siendo b una recomendación.
 =end
 
-=begin
-  En este apartado está el problema de como afrontamos el tema de las
-  recomendaciones. Parece lo más intuitivo ya que no se trata de una clase
-  a mayores, realizar dicha recomendación a través de un array de menús.
-  El código que sigue a continuación supone esta última aserción.
-=end
+######   del ej4.rb ######
 
-##### clase del ej2.rb ####
 class Menu_dietetico
 
   # Incluimos el módulo comparable para poder hacer comparaciones y
@@ -69,10 +64,12 @@ recomendacion = [ligero_mañana, ligero_mediodia, ligero_mediatarde, ligero_noch
 
 
 # Mostramos para ver la correcta inserción de los datos:
-recomendacion.each do |r|
-  puts r
+def mostrar_recomendacion conjunto
+  conjunto.each do |r|
+    puts r
+  end
 end
-
+mostrar_recomendacion recomendacion
 
 #### ej4.rb Función que se pide en el ejercicio
 def max_VCM conjunto
@@ -82,3 +79,24 @@ end
 
 # Mostramos por pantalla:
 puts "\nEl máximo de calorías es :\n#{max_VCM recomendacion}"
+##############################################################################
+
+# Función ej6rb
+
+# conjunto: recomendación, factor: número(ej: max_VCM(conjunto))
+# estamos trabajando sobre una copia, no sobre la recomendación que nos pasan,
+# solo habría que eliminar aux y trabajar directamente sobre conjunto.
+def mult(conjunto, factor)
+  puts "Funcion de multiplicación\n"
+  aux = conjunto
+  aux.each do |x|
+    x.VCM *= factor
+    puts x.VCM
+  end
+  aux
+end
+
+puts "\nSalida para el ej6.rb con la misma recomendacion y un factor de #{max_VCM recomendacion}\n"
+recomendacion_por_factor = mult(recomendacion, (max_VCM recomendacion))
+
+mostrar_recomendacion recomendacion_por_factor
