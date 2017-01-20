@@ -39,6 +39,22 @@ describe Practica7 do
     it "La lista se puede mostrar" do
       puts @lista
     end
+    
+    it "Se puede añadir un elemento por la cola" do
+      
+    end
+    
+    it "Se puede añadir un elemento por el head" do
+    
+    end
+    
+    it "Se puede extraer un elemento por la cola" do
+    
+    end
+    
+    it "Se puede extraer un elemento por el head" do
+    
+    end
   end
 
 end
