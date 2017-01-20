@@ -41,14 +41,14 @@ describe Practica7 do
     end
     
     it "Se puede añadir un elemento por la cola" do
-      aux = Nodo.new(1)
+      aux = Nodo_doble.new(1)
       @lista.push_end(aux)
       expect(@lista.Tail_).to eq(aux)
       expect(@lista.Size_).to eq(3)
     end
     
     it "Se puede añadir un elemento por el head" do
-      aux = Nodo.new(1)
+      aux = Nodo_doble.new(1)
       @lista.push_start(aux)
       expect(@lista.Head_).to eq(aux)
       expect(@lista.Size_).to eq(3)

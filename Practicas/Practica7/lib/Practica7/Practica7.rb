@@ -1,4 +1,4 @@
-require "Practica7/version"
+
 
 class Nodo
     include Comparable
@@ -49,6 +49,7 @@ class Lista
     
     def push_end(aux)
         if(@Size_==0)
+            
             #aux.Prev_ = nil
             @Head_ = aux
         else
