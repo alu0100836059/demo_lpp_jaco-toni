@@ -1,4 +1,5 @@
 require "/home/ubuntu/workspace/demo_lpp_jaco-toni/Practicas/Practica7/lib/Practica7/Practica7"
+
 class Nodo_doble < Nodo
    attr_accessor :Prev_
    def initialize(*args)
