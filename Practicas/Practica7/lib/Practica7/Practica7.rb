@@ -15,7 +15,8 @@ class Nodo
     end
     
     def to_s
-        "Node-> #{@Data_} \n Nodo Siguiente -> #{@Next_}"
+        #"[Data-Node-> #{@Data_} Next-Node -> #{@Next_}]"
+        "#{@Data_}"
     end
 end
 
@@ -53,13 +54,12 @@ class Lista
         @Size_ = @Size_ + 1
     end
     
+    def help(node)
+        self.each
+    end
     
-    def mostrar
-        aux = @Head_
-        while(aux != nil)
-            print aux
-            aux = aux.Next_        
-        end
+    def to_s
+       "no esta hecho" 
     end
     
     
