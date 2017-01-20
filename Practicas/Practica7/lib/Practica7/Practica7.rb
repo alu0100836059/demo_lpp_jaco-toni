@@ -61,7 +61,7 @@ class Lista
     end
     
     def pop_start()
-        if(@Size_>0)
+        if(@Size_==0)
            puts "Error! La lista esta vacia" 
         else
             aux = @Head_
@@ -72,7 +72,7 @@ class Lista
     end
     
     def pop_end()
-        if(@Size_>0)
+        if(@Size_==0)
            puts "Error! La lista esta vacia" 
         else
             
@@ -91,10 +91,6 @@ class Lista
             @Size_ = @Size_ - 1
             return aux
         end
-    end
-    
-    def help(node)
-        self.each
     end
     
     def each
