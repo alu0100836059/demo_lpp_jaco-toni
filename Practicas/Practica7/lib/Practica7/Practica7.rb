@@ -17,7 +17,7 @@ class Nodo
     
     def to_s
         #"[Data-Node-> #{@Data_} Next-Node -> #{@Next_}]"
-        "#{@Data_}"
+        "Soy el #{self.class} -> (#{@Data_})"
     end
     
     def <=>(oher)
@@ -102,9 +102,9 @@ class Lista
     end
     
     def to_s
-        str = "Con tamaño: #{@Size_}\n"
+        str = "Soy la #{self.class}\nCon tamaño: #{@Size_}\n\n"
         self.each do |n|
-            str << "#{n}\n"
+            str << "\t#{n}\n"
         end
         return str
     end
