@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe Practica7 do
-  before(:all) do
+  before(:each) do
     @Nodo = Nodo.new(7)
     @Nodo1 = Nodo.new(2)
     @lista = Lista.new()
@@ -38,6 +38,32 @@ describe Practica7 do
     
     it "La lista se puede mostrar" do
       puts @lista
+    end
+    
+    it "Se puede añadir un elemento por la cola" do
+      aux = Nodo_doble.new(1)
+      @lista.push_end(aux)
+      expect(@lista.Tail_).to eq(aux)
+      expect(@lista.Size_).to eq(3)
+    end
+    
+    it "Se puede añadir un elemento por el head" do
+      aux = Nodo_doble.new(1)
+      @lista.push_start(aux)
+      expect(@lista.Head_).to eq(aux)
+      expect(@lista.Size_).to eq(3)
+    end
+    
+    it "Se puede extraer un elemento por la cola" do
+      prob = @lista.Tail_
+      aux = @lista.pop_end
+      expect(prob).to eq(aux)
+    end
+    
+    it "Se puede extraer un elemento por el head" do
+      prob = @lista.Head_
+      aux = @lista.pop_start
+      expect(prob).to eq(aux)
     end
   end
 
