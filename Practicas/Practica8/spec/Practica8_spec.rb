@@ -9,6 +9,13 @@ describe Practica8 do
     @lista.push_end(@Nodo)
     @lista.push_end(@Nodo1)
     @lista.push_end(@Nodo2)
+    @m1 = Comida.new("maccarrones","1 medio cucharon",200)
+    @m2 = Comida.new("escalope","1 pequeño",100)
+    @m3 = Comida.new("ensalada","1 grande", 180)
+    @m4 = Comida.new("pan de trigo","2 rebanadas",20)
+    
+    @menu_por_edades = Menu_por_edad.new("ALMUERZO","(30-35%)",@m1,@m2,@m3,@m4,785.9,19,34,47,"de 4 a 8 años")
+    @menu_por_alimen = Menu_por_alimentos.new("ALMUERZO","(30-35%)",@m1,@m2,@m3,@m4,785.9,19,34,47,"vegetarianos asquerosos")
   end
   it "has a version number" do
     expect(Practica8::VERSION).not_to be nil
@@ -73,7 +80,20 @@ describe Practica8 do
       aux = @lista.pop_start
       expect(aux).to eq(prob)
     end
-
-    
+  end
+  
+  describe "Pruebas de herencia sobre menus(Prct6)" do
+    it "El menu por edades tiene una edad definina" do
+      expect(@menu_por_edades.edades_).not_to be nil
+    end
+    it "El menu por alimentos tiene un grupo de alimentos asociados" do
+      expect(@menu_por_alimen.alimentos_).not_to be nil
+    end
+    it "El menu por edades se muestra correctamente" do
+      puts @menu_por_edades
+    end
+    it "el menu por alimentos se muestra correctamente" do
+      puts @menu_por_alimen
+    end
   end
 end

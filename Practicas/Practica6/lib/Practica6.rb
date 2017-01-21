@@ -8,10 +8,11 @@ class Comida
    
    def to_s
         "#{@Nombre_}, #{@Porcion_} , #{@Cantidad_}"
-    end
+   end
 end
 
 class Menu
+    include Comparable
     attr_accessor :Nombre_,:Porcentaje_,:Platos_,:VCT,:Por_hydr,:Por_prote,:Por_fat
     def initialize(name,por,*platos,vct,por_hydr,por_prote,por_fat)
         @Nombre_ = name
@@ -21,6 +22,10 @@ class Menu
         @Por_prote = por_prote
         @Por_hydr = por_hydr
         @Platos_ = platos
+    end
+    
+    def <=>(other)
+        self.VCT <=> other.VCT    
     end
     
     def to_s
