@@ -1,5 +1,6 @@
 require "/home/ubuntu/workspace/demo_lpp_jaco-toni/Practicas/Practica7/lib/Practica7/Practica7"
 require "/home/ubuntu/workspace/demo_lpp_jaco-toni/Practicas/Practica6/lib/Practica6"
+
 class Nodo_doble < Nodo
    attr_accessor :Prev_
    def initialize(*args)
@@ -52,6 +53,11 @@ class Menu_por_edad < Menu
        @edades_ = edades
        super(name,por,*platos,vct,por_hydr,por_prote,por_fat)
     end
+    def to_s
+       str= "Agrupado por: #{@edades_}\n"
+       str << super
+       return str
+    end
 end
 
 class Menu_por_alimentos < Menu
@@ -60,4 +66,9 @@ class Menu_por_alimentos < Menu
        @alimentos_ = alimentos
        super(name,por,*platos,vct,por_hydr,por_prote,por_fat) 
    end
+    def to_s
+       str= "Agrupado por: #{@alimentos_}\n"
+       str << super
+       return str
+    end
 end
