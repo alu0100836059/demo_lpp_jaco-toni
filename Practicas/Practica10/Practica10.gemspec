@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'Practica9/version'
+require 'Practica10/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Practica9"
-  spec.version       = Practica9::VERSION
+  spec.name          = "Practica10"
+  spec.version       = Practica10::VERSION
   spec.authors       = ["alu0100789331"]
   spec.email         = ["alu0100789331@edu.ull.es"]
 
   spec.summary       = "Practica de LPP (ULL)"
-  spec.description   = "Practica de DSL"
+  spec.description   = "Practica 10- hilos"
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
