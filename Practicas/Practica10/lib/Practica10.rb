@@ -1,5 +1,2 @@
 require "Practica10/version"
-
-module Practica10
-  # Your code goes here...
-end
+require "/home/ubuntu/workspace/demo_lpp_jaco-toni/Practicas/Practica6/lib/Practica6"
